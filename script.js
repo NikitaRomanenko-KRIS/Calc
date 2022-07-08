@@ -13,8 +13,6 @@ calc.addEventListener('click', function(event) {
     if (result.innerText.search(/[^0-9*/+-.]/mi) != -1) return;
             result.innerText =  eval(result.innerText).toFixed(2);  
             break;
-        case '.':
-            return;
         default:
             result.innerText += value;
     }
